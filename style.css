@@ -1,9 +1,8 @@
-:root{
+:root {
     --background-color1: #D8BD8A;
     --background-color2: #AA5042;
     --background-color3: #753742;
 }
-
 
 * {
     margin: 0;
@@ -26,7 +25,8 @@ body {
     width: 100%;
     padding: 1rem;
 }
-h1{
+
+h1 {
     margin-bottom: 1.5rem;
 }
 
@@ -39,19 +39,63 @@ h1{
     width: 100%;
     max-width: 1200px;
 }
+
 .list {
     background: #fff;
-    padding: 10px;
+    padding: 1rem;
     border-radius: 4px;
-    min-width: 200px;
+    width: 30%;
+    min-height: 400px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    flex: 1;
 }
+
+.list h2 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
 .card {
     background: #e3e3e3;
     margin: 10px 0;
-    padding: 10px;
-    border-radius: 4px;
+    padding: .9rem;
+    border-radius: 5px;
     cursor: grab;
+    transition: transform 0.2s ease;
+}
+.card:active {
+    cursor: grabbing;
+    transform: scale(0.98);
+}
+.list.drag-over {
+    background: #f0f0f0;
+    border: 2px dashed #ccc;
 }
 
+@media (max-width: 768px) {
+    .board {
+        flex-direction: column;
+        align-items: center;
+    }
+    .list {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+    
+}
+/* Specific styles for cards in each list 
+
+#list1 .card {
+    background-color: var(--background-color1);
+}
+
+#list2 .card {
+    background-color: var(--background-color2);
+    color: white;
+}
+
+#list3 .card {
+    background-color: var(--background-color3);
+    color: white;
+}*/
