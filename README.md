@@ -30,9 +30,8 @@ This is a simple Kanban board web application built with HTML, CSS, and JavaScri
 
 ### Images
 
-```markdown
-![Kanban Board Screenshot](img/1.png "Kanban Board")
-```
+![Kanban Board Screenshot](img/1.png)
+
 
 ## Potential Improvements
 
